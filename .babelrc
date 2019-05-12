@@ -1,0 +1,19 @@
+{
+  "presets": [
+      "env"
+  ],
+  "plugins": [
+    "babel-plugin-transform-regenerator",
+    "babel-plugin-transform-object-rest-spread",
+    ["module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "models": "./src/models",
+          "routes": "./src/routes",
+          "middlewares": "./src/middlewares"
+        }
+      }
+    ]
+  ]
+}
